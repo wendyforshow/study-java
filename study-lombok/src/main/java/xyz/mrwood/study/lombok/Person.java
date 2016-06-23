@@ -3,10 +3,9 @@
  */
 package xyz.mrwood.study.lombok;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.util.List;
 
 /**
  * 项目：study
@@ -18,10 +17,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Person {
 
     private String name;
     private int age;
     private char sex;
+    @Singular private List<String> books;
 
 }

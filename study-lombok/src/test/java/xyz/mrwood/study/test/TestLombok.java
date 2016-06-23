@@ -4,6 +4,7 @@
 package xyz.mrwood.study.test;
 
 import lombok.NonNull;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.junit.Test;
@@ -21,15 +22,30 @@ public class TestLombok {
 
     @Test
     public void testSetterAndGetter(){
-        val t = "23";
         Person person = new Person();
         person.setAge(123);
         person.setName("kiwi");
         person.setSex('F');
 
+
+        System.err.println(person);
+
         log.info("new person = {}", person);
     }
 
+    @Test
+    public void testVal(){
+
+        val t = "23";
+        System.err.println(t.getClass());
+    }
+
+    @Test
+    public void testBuilder(){
+
+        Person person1 = Person.builder().age(18).name("kiwifly").sex('M').book("java").book("html").build();
+        System.err.println(person1);
+    }
 
     @Test
     public void testPersonNull(){
@@ -41,5 +57,20 @@ public class TestLombok {
 
 
     }
+
+
+    @Test
+    public void testEx(){
+
+        testException();
+    }
+
+    @SneakyThrows
+    public void testException(){
+
+        throw new Exception();
+    }
+
+
 
 }

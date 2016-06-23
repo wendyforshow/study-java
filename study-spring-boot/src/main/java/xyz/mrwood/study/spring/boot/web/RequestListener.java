@@ -29,7 +29,6 @@ public class RequestListener implements ServletRequestListener {
     @Override
     public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
 
-        System.err.println("销毁request");
         logger.info("requestInfo = {}", ThreadLocalUtil.get(CommonConstant.THREAD_LOCAL_REQUEST));
 
         ThreadLocalUtil.remove();
@@ -38,10 +37,7 @@ public class RequestListener implements ServletRequestListener {
     @Override
     public void requestInitialized(ServletRequestEvent servletRequestEvent) {
 
-        System.err.println("初始化request");
-
         HttpServletRequest request = (HttpServletRequest)servletRequestEvent.getServletRequest();
-
 
         RequestThreadLocal requestThreadLocal = new RequestThreadLocal();
         requestThreadLocal.setRequestParamsMap(WebUtils.getParametersStartingWith(request, ""));

@@ -10,6 +10,7 @@
     <module>study-log4j</module>
     <module>study-spring-boot</module>
     <module>study-fastjson</module>
+    <module>study-lombok</module>
   </modules>
   <packaging>pom</packaging>
 

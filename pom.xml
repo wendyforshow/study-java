@@ -11,6 +11,7 @@
     <module>study-spring-boot</module>
     <module>study-fastjson</module>
     <module>study-lombok</module>
+    <module>study-testng</module>
   </modules>
   <packaging>pom</packaging>
 

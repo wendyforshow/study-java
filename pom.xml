@@ -12,6 +12,7 @@
     <module>study-fastjson</module>
     <module>study-lombok</module>
     <module>study-testng</module>
+    <module>study-apache-poi</module>
   </modules>
   <packaging>pom</packaging>
 

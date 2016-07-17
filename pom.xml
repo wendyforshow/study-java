@@ -13,6 +13,8 @@
     <module>study-lombok</module>
     <module>study-testng</module>
     <module>study-apache-poi</module>
+    <module>study-sharding-jdbc</module>
+    <module>study-spring-mybatis</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -15,6 +15,7 @@
     <module>study-apache-poi</module>
     <module>study-sharding-jdbc</module>
     <module>study-spring-mybatis</module>
+    <module>study-java-base</module>
   </modules>
   <packaging>pom</packaging>
 

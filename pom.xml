@@ -16,6 +16,7 @@
     <module>study-sharding-jdbc</module>
     <module>study-spring-mybatis</module>
     <module>study-java-base</module>
+    <module>study-dubbo</module>
   </modules>
   <packaging>pom</packaging>
 

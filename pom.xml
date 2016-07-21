@@ -19,6 +19,7 @@
     <module>study-dubbo</module>
     <module>study-validation</module>
     <module>study-rsa</module>
+    <module>study-utils</module>
   </modules>
   <packaging>pom</packaging>
 

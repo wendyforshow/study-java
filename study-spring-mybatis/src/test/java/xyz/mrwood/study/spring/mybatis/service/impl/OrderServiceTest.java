@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
+import redis.clients.jedis.JedisPoolConfig;
 import xyz.mrwood.study.spring.mybatis.dao.OrderMapperExt;
 import xyz.mrwood.study.spring.mybatis.service.IOrderService;
 
@@ -27,16 +28,19 @@ public class OrderServiceTest extends AbstractTestNGSpringContextTests {
     private IOrderService orderService;
     @Resource
     private OrderMapperExt orderMapperExt;
+    @Resource
+    private JedisPoolConfig jedisPoolConfig;
 
     @Test
     public void testGetByOrderId() throws Exception {
 
+//        System.err.println(jedisPoolConfig);
 //
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
 //
 //        OrderService orderService = context.getBean("orderService", OrderService.class);
 
-        System.err.println(orderService.getByOrderId("123456"));
+//        System.err.println(orderService.getByOrderId("11"));
     }
 
 

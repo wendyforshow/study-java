@@ -20,6 +20,9 @@
     <module>study-validation</module>
     <module>study-rsa</module>
     <module>study-utils</module>
+    <module>study-searche</module>
+    <module>study-verbalExpressions</module>
+    <module>study-RxJava</module>
   </modules>
   <packaging>pom</packaging>
 

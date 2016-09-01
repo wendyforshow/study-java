@@ -2,30 +2,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <artifactId>study-hessian</artifactId>
+        <artifactId>hessian-server</artifactId>
         <groupId>xyz.mrwood.study</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>hessian-server</artifactId>
-    <packaging>pom</packaging>
-    <name>hessian-server Maven Webapp</name>
+    <artifactId>server-service</artifactId>
+    <packaging>jar</packaging>
+    <name>server-service</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>server-facade</module>
-        <module>server-service</module>
-        <module>server-web</module>
-    </modules>
     <dependencies>
 
-        <!--引入hessian依赖-->
         <dependency>
-            <groupId>com.caucho</groupId>
-            <artifactId>hessian</artifactId>
-            <version>4.0.38</version>
+            <groupId>xyz.mrwood.study</groupId>
+            <artifactId>server-facade</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-
-
+        
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -34,6 +27,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>hessian-server</finalName>
+        <finalName>server-service</finalName>
     </build>
 </project>

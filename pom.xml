@@ -24,6 +24,7 @@
     <module>study-verbalExpressions</module>
     <module>study-RxJava</module>
     <module>study-logback</module>
+    <module>study-hessian</module>
   </modules>
   <packaging>pom</packaging>
 

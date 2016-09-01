@@ -8,6 +8,9 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 项目：study
  * 包名：xyz.mrwood.study
@@ -62,7 +65,10 @@ public class TestJson {
 //        String sub_merchant_id = return_value.getString("sub_merchant_id");
 //        System.err.println(sub_merchant_id);
 
-        System.err.println(getValue(str, "sub_merchant_id"));
+        String sub_merchant_id = getValue(str, "sub_merchant_id");
+
+        List<String> list = new ArrayList<>();
+        list.add(sub_merchant_id);
 
     }
 

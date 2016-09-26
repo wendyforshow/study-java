@@ -25,6 +25,7 @@
     <module>study-RxJava</module>
     <module>study-logback</module>
     <module>study-hessian</module>
+    <module>study-rocket-mq</module>
   </modules>
   <packaging>pom</packaging>
 

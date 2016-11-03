@@ -26,6 +26,7 @@
     <module>study-logback</module>
     <module>study-hessian</module>
     <module>study-rocket-mq</module>
+      <module>study-download</module>
   </modules>
   <packaging>pom</packaging>
 

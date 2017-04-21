@@ -3,6 +3,7 @@
  */
 package xyz.mrwood.study.log4j;
 
+import cn.coder4j.jtools.anno.NotNull;
 import org.apache.log4j.Logger;
 
 /**
@@ -14,6 +15,7 @@ import org.apache.log4j.Logger;
  */
 public class LogApp {
 
+    @NotNull
     private static Logger logger = Logger.getLogger(LogApp.class);
 
     public void hello(){
@@ -21,5 +23,9 @@ public class LogApp {
         logger.info("这是LogApp的日志");
 
         System.out.println("hello world!");
+    }
+
+    public static void main(String[] args) {
+
     }
 }

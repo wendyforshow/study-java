@@ -27,6 +27,13 @@
     <module>study-hessian</module>
     <module>study-rocket-mq</module>
       <module>study-download</module>
+      <module>study-weixin</module>
+      <module>study-jsch</module>
+      <module>study-thread</module>
+      <module>study-super-csv</module>
+      <module>study-javafx</module>
+      <module>study-JSR269</module>
+      <module>study-JSR269-demo</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -38,6 +45,10 @@
   </properties>
 
   <dependencies>
-
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
+    </dependency>
   </dependencies>
 </project>
